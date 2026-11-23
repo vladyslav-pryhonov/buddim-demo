@@ -14,7 +14,7 @@
 <link rel="preload" href="fonts/geologica-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/geologica-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="img/hero.webp" as="image" type="image/webp">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -239,23 +239,35 @@
       <fieldset style="border:0;min-width:0">
         <legend class="sr">Тип ремонту</legend>
         <div class="tiers">
-          <label class="tier"><input type="radio" name="tier" value="0" data-min="6500" data-max="9000" data-term="3–5 тижнів">
-            <div class="tier__in">
-              <h3>Косметичний<small>Оновлення без демонтажу</small></h3>
-              <p>Шпаклівка, фарбування, стелі, заміна підлогового покриття.</p>
-              <div class="tier__p mono">6 500–9 000 ₴<small>за м², 3–5 тижнів</small></div>
+          <label class="tier">
+            <input type="radio" name="tier" value="0" data-min="6500" data-max="9000" data-term="3–5 тижнів">
+            <div class="tier__card">
+              
+              <div class="tier__top"><span class="tier__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M6 5H32V15H6Z"/><path d="M32 10H38V22H20V28"/><path d="M17 28H23V40H17Z"/></svg></span><div><h3>Косметичний</h3><p class="tier__sub">Оновлення без демонтажу</p></div></div>
+              <div class="tier__price"><b class="mono">6 500–9 000</b><span>₴ за м²</span></div>
+              <div class="tier__term"><span>3–5 тижнів</span><i aria-hidden="true"><u style="--s:3;--e:5"></u></i></div>
+              <ul class="tier__ul"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Шпаклівка й фарбування стін</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Стелі</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Заміна підлогового покриття</li></ul>
+              <span class="tier__pick"><span class="pk-off">Обрати цей тип</span><span class="pk-on">Обрано</span></span>
             </div></label>
-          <label class="tier"><input type="radio" name="tier" value="1" data-min="11000" data-max="16000" data-term="6–10 тижнів" checked>
-            <div class="tier__in">
-              <h3><b class="tag">Дизайн у комплекті</b><br>Під ключ<small>Комплексний ремонт</small></h3>
-              <p>Електрика й сантехніка з нуля, дизайн-проєкт, усі роботи з косметичного.</p>
-              <div class="tier__p mono">11 000–16 000 ₴<small>за м², 6–10 тижнів</small></div>
+          <label class="tier">
+            <input type="radio" name="tier" value="1" data-min="11000" data-max="16000" data-term="6–10 тижнів" checked>
+            <div class="tier__card">
+              <b class="tag">Дизайн у комплекті</b>
+              <div class="tier__top"><span class="tier__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M5 5H39V39H5Z"/><path d="M5 22H20V39"/><path d="M20 14H39"/></svg></span><div><h3>Під ключ</h3><p class="tier__sub">Комплексний ремонт</p></div></div>
+              <div class="tier__price"><b class="mono">11 000–16 000</b><span>₴ за м²</span></div>
+              <div class="tier__term"><span>6–10 тижнів</span><i aria-hidden="true"><u style="--s:6;--e:10"></u></i></div>
+              <ul class="tier__ul"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Усі роботи з косметичного</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Електрика з нуля</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Сантехніка з нуля</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Дизайн-проєкт у комплекті</li></ul>
+              <span class="tier__pick"><span class="pk-off">Обрати цей тип</span><span class="pk-on">Обрано</span></span>
             </div></label>
-          <label class="tier"><input type="radio" name="tier" value="2" data-min="16000" data-max="22000" data-term="8–16 тижнів">
-            <div class="tier__in">
-              <h3>Капітальний<small>Перепланування та фасад</small></h3>
-              <p>Перепланування, стяжка, утеплення, фасадні й зовнішні роботи.</p>
-              <div class="tier__p mono">16 000–22 000 ₴<small>за м², 8–16 тижнів</small></div>
+          <label class="tier">
+            <input type="radio" name="tier" value="2" data-min="16000" data-max="22000" data-term="8–16 тижнів">
+            <div class="tier__card">
+              
+              <div class="tier__top"><span class="tier__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M5 20L22 5L39 20"/><path d="M9 17V39H35V17"/><path d="M18 39V27H26V39"/></svg></span><div><h3>Капітальний</h3><p class="tier__sub">Перепланування та фасад</p></div></div>
+              <div class="tier__price"><b class="mono">16 000–22 000</b><span>₴ за м²</span></div>
+              <div class="tier__term"><span>8–16 тижнів</span><i aria-hidden="true"><u style="--s:8;--e:16"></u></i></div>
+              <ul class="tier__ul"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Усі роботи з «Під ключ»</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Перепланування</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Стяжка й утеплення</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Фасадні й зовнішні роботи</li></ul>
+              <span class="tier__pick"><span class="pk-off">Обрати цей тип</span><span class="pk-on">Обрано</span></span>
             </div></label>
         </div>
       </fieldset>
@@ -493,6 +505,6 @@
   <a class="btn" href="#final-form">Отримати кошторис</a>
 </div>
 
-<script src="js/main.js?v=4" defer></script>
+<script src="js/main.js?v=5" defer></script>
 </body>
 </html>
