@@ -439,18 +439,16 @@ footer{background:var(--ink-2);color:var(--on-dark);padding:48px 0 32px;font-siz
 /* поява під час прокрутки: різні рухи для різних елементів */
 .js .rv:not(.in){opacity:0;transform:translateY(18px)}
 .js .rv{transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--i,0) * 90ms)}
-.js .wipe:not(.in){clip-path:inset(0 100% 0 0)}
-.js .wipe{transition:clip-path 1.2s var(--ease)}
-.js .wipe.in{clip-path:inset(0 0 0 0)}
-.js .wipe:not(.in) img{transform:scale(1.18)}
-.js .wipe img{transition:transform 1.8s var(--ease)}
+/* обрізається сама картинка, а не спостережуваний контейнер: інакше IntersectionObserver вважає його невидимим */
+.js .wipe:not(.in) img{clip-path:inset(0 100% 0 0);transform:scale(1.18)}
+.js .wipe img{transition:clip-path 1.2s var(--ease),transform 1.8s var(--ease)}
+.js .wipe.in img{clip-path:inset(0 0 0 0)}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .js .rv:not(.in){opacity:1;transform:none}
-  .js .wipe:not(.in){clip-path:none}
-  .js .wipe:not(.in) img{transform:none}
+  .js .wipe:not(.in) img{clip-path:none;transform:none}
   .steps::after{transform:none}
   .stamp{opacity:.94}
   .hero__bg{transform:none!important}

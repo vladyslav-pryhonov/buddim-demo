@@ -38,6 +38,14 @@
     seen.forEach(function (el) { el.classList.add('in'); });
   }
 
+  /* страховка: якщо спостерігач не спрацював, через кілька секунд усе показуємо */
+  setTimeout(function () {
+    seen.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 1.1 && r.bottom > 0) el.classList.add('in');
+    });
+  }, 4000);
+
   /* аркуш кошторису: сценарій і повтор */
   var sheet = $('#sheet'), total = $('#total');
   var totalTo = total ? +total.getAttribute('data-to') : 0;
