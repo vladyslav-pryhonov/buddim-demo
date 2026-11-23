@@ -26,7 +26,7 @@
   }
 
   /* поява під час прокрутки */
-  var seen = $$('.rv, [data-obs]');
+  var seen = $$('.rv, .wipe, [data-obs]');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
@@ -52,6 +52,20 @@
     var r = $('#replay');
     if (r) r.addEventListener('click', playSheet);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(playSheet); else playSheet();
+  }
+
+  /* легкий паралакс фото на першому екрані */
+  var hb = $('#heroBg');
+  if (hb && !reduce) {
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () {
+        var y = window.scrollY;
+        if (y < 1400) hb.style.setProperty('--py', (y * 0.18).toFixed(1) + 'px');
+        ticking = false;
+      });
+    }, { passive: true });
   }
 
   /* гарантія: 36 */

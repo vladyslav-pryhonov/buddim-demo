@@ -6,14 +6,15 @@
 <title>Ремонт квартир під ключ у Києві: сума в договорі не змінюється | БудДім</title>
 <meta name="description" content="Кошторис за 24 години. Суму фіксуємо в договорі до першого платежу, гарантія 36 місяців, фотозвіт щотижня. Демо-проєкт про вигаданий бізнес.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#ECEEF0">
+<meta name="theme-color" content="#17150F">
 <meta property="og:title" content="БудДім: ремонт зі сумою, яка не змінюється">
 <meta property="og:description" content="Кошторис за 24 години. Суму фіксуємо в договорі до першого платежу.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%232038D6'/><path d='M7 25V7h18v18z M7 18h11v7' fill='none' stroke='white' stroke-width='3'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23AD5A28'/><path d='M7 25V7h18v18z M7 18h11v7' fill='none' stroke='%23FBFAF7' stroke-width='3'/></svg>">
 <link rel="preload" href="fonts/geologica-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/geologica-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="preload" href="img/hero.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="css/style.css?v=3">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -41,8 +42,9 @@
 
 <main id="top">
 
-<!-- ПЕРШИЙ ЕКРАН: аркуш кошторису з планом, печаткою і сумою -->
-<section class="hero">
+<!-- ПЕРШИЙ ЕКРАН: фото інтер'єру, а поверх нього аркуш кошторису з планом, печаткою і сумою -->
+<section class="hero" id="hero">
+  <div class="hero__bg" id="heroBg"><img src="img/hero.webp" width="1920" height="1306" alt="" fetchpriority="high"></div>
   <div class="wrap hero__grid">
     <div class="hero__copy">
       <h1>Сума в договорі не зміниться <span class="u">до останнього дня ремонту</span></h1>
@@ -58,110 +60,116 @@
       </ul>
     </div>
 
-    <figure class="sheet" id="sheet" aria-label="Приклад кошторису на ремонт квартири 65 м² з підсумком 812 000 гривень">
-      <button class="replay" type="button" id="replay">Ще раз</button>
-      <div class="sheet__top"><span>Кошторис № 047</span><span>Квартира 65 м², Київ</span></div>
-      <div class="sheet__body">
-        <svg class="plan" viewBox="0 0 360 268" role="img" aria-label="План квартири з розмірами 9 300 на 7 000 міліметрів">
-          <!-- зовнішні стіни та перегородки -->
-          <path class="w w1" pathLength="1" d="M30 40H310V250H30Z"/>
-          <path class="w w2" pathLength="1" d="M200 40V250"/>
-          <path class="w w2" pathLength="1" d="M200 165H310"/>
-          <path class="w w2" pathLength="1" d="M30 187H200"/>
-          <path class="w w2" pathLength="1" d="M120 187V250"/>
-          <!-- прорізи -->
-          <rect class="gap" x="196" y="95" width="8" height="25"/>
-          <rect class="gap" x="196" y="200" width="8" height="25"/>
-          <rect class="gap" x="55" y="183" width="25" height="8"/>
-          <rect class="gap" x="165" y="183" width="25" height="8"/>
-          <rect class="gap" x="78" y="246" width="28" height="8"/>
-          <rect class="gap" x="60" y="35" width="70" height="10"/>
-          <rect class="gap" x="225" y="35" width="60" height="10"/>
-          <rect class="gap" x="25" y="75" width="10" height="60"/>
-          <rect class="gap" x="305" y="70" width="10" height="60"/>
-          <rect class="gap" x="305" y="185" width="10" height="50"/>
-          <path class="door" pathLength="1" d="M200 120H225M225 120A25 25 0 0 0 200 95"/>
-          <path class="door" pathLength="1" d="M200 225H225M225 225A25 25 0 0 0 200 200"/>
-          <path class="door" pathLength="1" d="M55 187V212M55 212A25 25 0 0 0 80 187"/>
-          <path class="door" pathLength="1" d="M190 187V212M190 212A25 25 0 0 1 165 187"/>
-          <path class="door" pathLength="1" d="M106 250V222M106 222A28 28 0 0 0 78 250"/>
-          <path class="glass" pathLength="1" d="M60 38H130M60 42H130"/>
-          <path class="glass" pathLength="1" d="M225 38H285M225 42H285"/>
-          <path class="glass" pathLength="1" d="M28 75V135M32 75V135"/>
-          <path class="glass" pathLength="1" d="M308 70V130M312 70V130"/>
-          <path class="glass" pathLength="1" d="M308 185V235M312 185V235"/>
-          <!-- меблі -->
-          <rect class="fu" pathLength="1" x="106" y="118" width="64" height="26"/>
-          <circle class="fu" pathLength="1" cx="140" cy="86" r="14"/>
-          <rect class="fu" pathLength="1" x="138" y="44" width="56" height="16"/>
-          <rect class="fu" pathLength="1" x="240" y="46" width="56" height="70"/>
-          <rect class="fu" pathLength="1" x="250" y="205" width="32" height="40"/>
-          <rect class="fu" pathLength="1" x="286" y="190" width="20" height="40"/>
-          <rect class="fu" pathLength="1" x="126" y="193" width="22" height="52"/>
-          <circle class="fu" pathLength="1" cx="178" cy="238" r="6"/>
-          <!-- підписи кімнат -->
-          <text class="room" x="42" y="165">Вітальня-кухня</text>
-          <text x="42" y="178">27,6 м²</text>
-          <text class="room" x="208" y="146">Спальня</text>
-          <text x="208" y="159">15,2 м²</text>
-          <text class="room" x="208" y="184">Дитяча</text>
-          <text x="208" y="197">10,3 м²</text>
-          <text x="34" y="238">6,3 м²</text>
-          <text x="152" y="226">5,6 м²</text>
-          <!-- розміри -->
-          <path class="dim" pathLength="1" d="M30 22H310M30 16V28M310 16V28"/>
-          <text class="tdim" x="170" y="14" text-anchor="middle">9 300</text>
-          <path class="dim" pathLength="1" d="M338 40V250M332 40H344M332 250H344"/>
-          <text class="tdim" x="0" y="0" text-anchor="middle" transform="translate(352 145) rotate(90)">7 000</text>
-        </svg>
+    <div class="stack">
+      <i class="under" aria-hidden="true"></i>
+      <figure class="sheet" id="sheet" aria-label="Приклад кошторису на ремонт квартири 65 м² з підсумком 812 000 гривень">
+        <button class="replay" type="button" id="replay">Ще раз</button>
+        <div class="sheet__top"><span>Кошторис № 047</span><span>Квартира 65 м², Київ</span></div>
+        <div class="sheet__body">
+          <svg class="plan" viewBox="0 0 360 268" role="img" aria-label="План квартири з розмірами 9 300 на 7 000 міліметрів">
+            <path class="w w1" pathLength="1" d="M30 40H310V250H30Z"/>
+            <path class="w w2" pathLength="1" d="M200 40V250"/>
+            <path class="w w2" pathLength="1" d="M200 165H310"/>
+            <path class="w w2" pathLength="1" d="M30 187H200"/>
+            <path class="w w2" pathLength="1" d="M120 187V250"/>
+            <rect class="gap" x="196" y="95" width="8" height="25"/>
+            <rect class="gap" x="196" y="200" width="8" height="25"/>
+            <rect class="gap" x="55" y="183" width="25" height="8"/>
+            <rect class="gap" x="165" y="183" width="25" height="8"/>
+            <rect class="gap" x="78" y="246" width="28" height="8"/>
+            <rect class="gap" x="60" y="35" width="70" height="10"/>
+            <rect class="gap" x="225" y="35" width="60" height="10"/>
+            <rect class="gap" x="25" y="75" width="10" height="60"/>
+            <rect class="gap" x="305" y="70" width="10" height="60"/>
+            <rect class="gap" x="305" y="185" width="10" height="50"/>
+            <path class="door" pathLength="1" d="M200 120H225M225 120A25 25 0 0 0 200 95"/>
+            <path class="door" pathLength="1" d="M200 225H225M225 225A25 25 0 0 0 200 200"/>
+            <path class="door" pathLength="1" d="M55 187V212M55 212A25 25 0 0 0 80 187"/>
+            <path class="door" pathLength="1" d="M190 187V212M190 212A25 25 0 0 1 165 187"/>
+            <path class="door" pathLength="1" d="M106 250V222M106 222A28 28 0 0 0 78 250"/>
+            <path class="glass" pathLength="1" d="M60 38H130M60 42H130"/>
+            <path class="glass" pathLength="1" d="M225 38H285M225 42H285"/>
+            <path class="glass" pathLength="1" d="M28 75V135M32 75V135"/>
+            <path class="glass" pathLength="1" d="M308 70V130M312 70V130"/>
+            <path class="glass" pathLength="1" d="M308 185V235M312 185V235"/>
+            <rect class="fu" pathLength="1" x="106" y="118" width="64" height="26"/>
+            <circle class="fu" pathLength="1" cx="140" cy="86" r="14"/>
+            <rect class="fu" pathLength="1" x="138" y="44" width="56" height="16"/>
+            <rect class="fu" pathLength="1" x="240" y="46" width="56" height="70"/>
+            <rect class="fu" pathLength="1" x="250" y="205" width="32" height="40"/>
+            <rect class="fu" pathLength="1" x="286" y="190" width="20" height="40"/>
+            <rect class="fu" pathLength="1" x="126" y="193" width="22" height="52"/>
+            <circle class="fu" pathLength="1" cx="178" cy="238" r="6"/>
+            <text class="room" x="42" y="165">Вітальня-кухня</text>
+            <text x="42" y="178">27,6 м²</text>
+            <text class="room" x="208" y="146">Спальня</text>
+            <text x="208" y="159">15,2 м²</text>
+            <text class="room" x="208" y="184">Дитяча</text>
+            <text x="208" y="197">10,3 м²</text>
+            <text x="34" y="238">6,3 м²</text>
+            <text x="152" y="226">5,6 м²</text>
+            <path class="dim" pathLength="1" d="M30 22H310M30 16V28M310 16V28"/>
+            <text class="tdim" x="170" y="14" text-anchor="middle">9 300</text>
+            <path class="dim" pathLength="1" d="M338 40V250M332 40H344M332 250H344"/>
+            <text class="tdim" x="0" y="0" text-anchor="middle" transform="translate(352 145) rotate(90)">7 000</text>
+          </svg>
 
-        <table class="est">
-          <caption>Роботи й матеріали за позиціями, ₴</caption>
-          <tbody>
-            <tr style="--i:0"><th scope="row">Дизайн-проєкт</th><td>48 000</td></tr>
-            <tr style="--i:1"><th scope="row">Демонтаж</th><td>48 000</td></tr>
-            <tr style="--i:2"><th scope="row">Чорнові роботи</th><td>186 000</td></tr>
-            <tr style="--i:3"><th scope="row">Електрика</th><td>74 000</td></tr>
-            <tr style="--i:4"><th scope="row">Сантехніка</th><td>62 000</td></tr>
-            <tr style="--i:5"><th scope="row">Чистові роботи</th><td>328 000</td></tr>
-            <tr style="--i:6"><th scope="row">Двері та вікна</th><td>52 000</td></tr>
-            <tr style="--i:7"><th scope="row">Прибирання</th><td>14 000</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="sheet__sign">
-        <div class="sig"><span>Замовник</span><i></i></div>
-        <div class="sig"><span>БудДім</span>
-          <svg viewBox="0 0 110 40" aria-hidden="true"><path pathLength="1" d="M3 30C9 8 17 5 19 19S27 34 34 15 43 9 45 22C50 35 58 12 66 19S80 31 90 11 101 8 107 14"/></svg>
+          <table class="est">
+            <caption>Роботи й матеріали за позиціями, ₴</caption>
+            <tbody>
+              <tr style="--i:0"><th scope="row">Дизайн-проєкт</th><td>48 000</td></tr>
+              <tr style="--i:1"><th scope="row">Демонтаж</th><td>48 000</td></tr>
+              <tr style="--i:2"><th scope="row">Чорнові роботи</th><td>186 000</td></tr>
+              <tr style="--i:3"><th scope="row">Електрика</th><td>74 000</td></tr>
+              <tr style="--i:4"><th scope="row">Сантехніка</th><td>62 000</td></tr>
+              <tr style="--i:5"><th scope="row">Чистові роботи</th><td>328 000</td></tr>
+              <tr style="--i:6"><th scope="row">Двері та вікна</th><td>52 000</td></tr>
+              <tr style="--i:7"><th scope="row">Прибирання</th><td>14 000</td></tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <div class="sheet__total"><span>Разом за договором</span><b><span id="total" data-to="812000">812 000</span><span class="cur">₴</span></b></div>
+        <div class="sheet__sign">
+          <div class="sig"><span>Замовник</span><i></i></div>
+          <div class="sig"><span>БудДім</span>
+            <svg viewBox="0 0 110 40" aria-hidden="true"><path pathLength="1" d="M3 30C9 8 17 5 19 19S27 34 34 15 43 9 45 22C50 35 58 12 66 19S80 31 90 11 101 8 107 14"/></svg>
+          </div>
+        </div>
+        <div class="sheet__total"><span>Разом за договором</span><b><span id="total" data-to="812000">812 000</span><span class="cur">₴</span></b></div>
 
-      <svg class="stamp" viewBox="0 0 160 160" aria-hidden="true">
-        <defs>
-          <path id="cp" d="M80 80m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/>
-          <filter id="ink" x="-6%" y="-6%" width="112%" height="112%">
-            <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="n"/>
-            <feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" result="d"/>
-            <feTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="2" seed="11" result="m"/>
-            <feColorMatrix in="m" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  2.4 0 0 0 -.42" result="mask"/>
-            <feComposite in="d" in2="mask" operator="in"/>
-          </filter>
-        </defs>
-        <g filter="url(#ink)">
-          <circle class="c" cx="80" cy="80" r="77" stroke-width="3"/>
-          <circle class="c" cx="80" cy="80" r="71" stroke-width="1"/>
-          <circle class="c" cx="80" cy="80" r="45" stroke-width="1.5"/>
-          <text><textPath href="#cp" textLength="360" lengthAdjust="spacing">БУДДІМ · СУМУ ЗАФІКСОВАНО · ДО ПЕРШОГО ПЛАТЕЖУ ·</textPath></text>
-          <text class="sm" x="80" y="68" text-anchor="middle">ДОГОВІР</text>
-          <text class="big" x="80" y="92" text-anchor="middle">№ 047</text>
-          <path d="M60 104H100" stroke="currentColor" stroke-width="1.5"/>
-          <text class="sm" x="80" y="118" text-anchor="middle">КИЇВ</text>
-        </g>
-      </svg>
-    </figure>
+        <svg class="stamp" viewBox="0 0 160 160" aria-hidden="true">
+          <defs>
+            <path id="cp" d="M80 80m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/>
+            <filter id="ink" x="-6%" y="-6%" width="112%" height="112%">
+              <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" result="d"/>
+              <feTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="2" seed="11" result="m"/>
+              <feColorMatrix in="m" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  2.4 0 0 0 -.42" result="mask"/>
+              <feComposite in="d" in2="mask" operator="in"/>
+            </filter>
+          </defs>
+          <g filter="url(#ink)">
+            <circle class="c" cx="80" cy="80" r="77" stroke-width="3"/>
+            <circle class="c" cx="80" cy="80" r="71" stroke-width="1"/>
+            <circle class="c" cx="80" cy="80" r="45" stroke-width="1.5"/>
+            <text><textPath href="#cp" textLength="360" lengthAdjust="spacing">БУДДІМ · СУМУ ЗАФІКСОВАНО · ДО ПЕРШОГО ПЛАТЕЖУ ·</textPath></text>
+            <text class="sm" x="80" y="68" text-anchor="middle">ДОГОВІР</text>
+            <text class="big" x="80" y="92" text-anchor="middle">№ 047</text>
+            <path d="M60 104H100" stroke="currentColor" stroke-width="1.5"/>
+            <text class="sm" x="80" y="118" text-anchor="middle">КИЇВ</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
   </div>
 </section>
+
+<!-- біжучий рядок -->
+<div class="mq" aria-hidden="true"><div class="mq__t">
+  <span>Фіксована сума в договорі</span><span>Кошторис за 24 години</span><span>Фотозвіт щотижня</span><span>Гарантія 36 місяців</span><span>Замір безкоштовний</span><span>Компенсуємо затримку з нашої вини</span>
+  <span>Фіксована сума в договорі</span><span>Кошторис за 24 години</span><span>Фотозвіт щотижня</span><span>Гарантія 36 місяців</span><span>Замір безкоштовний</span><span>Компенсуємо затримку з нашої вини</span>
+  <span>Фіксована сума в договорі</span><span>Кошторис за 24 години</span><span>Фотозвіт щотижня</span><span>Гарантія 36 місяців</span><span>Замір безкоштовний</span><span>Компенсуємо затримку з нашої вини</span>
+  <span>Фіксована сума в договорі</span><span>Кошторис за 24 години</span><span>Фотозвіт щотижня</span><span>Гарантія 36 місяців</span><span>Замір безкоштовний</span><span>Компенсуємо затримку з нашої вини</span>
+</div></div>
 
 <!-- РИЗИК: симулятор подорожчання -->
 <section class="risk" id="risk">
@@ -274,15 +282,15 @@
       <h2>Вісім напрямків робіт в одному договорі</h2>
       <p>Усе, що нижче, входить у вартість «Під ключ». Окремих рахунків за «додаткові» роботи не буде.</p>
     </div>
-    <div class="scope__grid" data-obs>
-      <div class="it rv" style="--i:0"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M5 5H39V39H5Z"/><path pathLength="1" d="M5 22H20V39"/><path pathLength="1" d="M20 14H39"/></svg><h3>Дизайн-проєкт</h3><p>Планування, розкладки, підбір матеріалів. Усе одразу потрапляє в кошторис.</p></div>
-      <div class="it rv" style="--i:1"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M8 8L36 36"/><path pathLength="1" d="M36 8L8 36"/><path pathLength="1" d="M4 4H40V40H4Z"/></svg><h3>Демонтаж</h3><p>Старе покриття, перегородки, вивезення сміття.</p></div>
-      <div class="it rv" style="--i:2"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M24 4L9 25H21L19 40L35 18H23Z"/></svg><h3>Електрика</h3><p>Нова проводка, щиток, розетки за схемою.</p></div>
-      <div class="it rv" style="--i:3"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M22 5C30 15 34 21 34 27A12 12 0 0 1 10 27C10 21 14 15 22 5Z"/><path pathLength="1" d="M18 29A5 5 0 0 0 23 34"/></svg><h3>Сантехніка</h3><p>Труби, підключення приладів, перевірка тиском.</p></div>
-      <div class="it rv" style="--i:4"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M4 7H40V37H4Z"/><path pathLength="1" d="M4 17H40M4 27H40"/><path pathLength="1" d="M18 7V17M30 17V27M14 27V37"/></svg><h3>Чорнові роботи</h3><p>Стяжка, штукатурка, вирівнювання стін.</p></div>
-      <div class="it rv" style="--i:5"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M6 5H32V15H6Z"/><path pathLength="1" d="M32 10H38V22H20V28"/><path pathLength="1" d="M17 28H23V40H17Z"/></svg><h3>Чистові роботи</h3><p>Підлога, плитка, фарбування, стелі.</p></div>
-      <div class="it rv" style="--i:6"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M9 4H35V40H9Z"/><path pathLength="1" d="M22 4V40M9 22H35"/></svg><h3>Двері та вікна</h3><p>Монтаж, регулювання, перевірка відкривання.</p></div>
-      <div class="it rv" style="--i:7"><svg viewBox="0 0 44 44" aria-hidden="true"><path pathLength="1" d="M20 5L24 17L36 21L24 25L20 37L16 25L4 21L16 17Z"/><path pathLength="1" d="M35 4V12M31 8H39"/></svg><h3>Прибирання</h3><p>Здаємо квартиру чистою, без будівельного пилу.</p></div>
+    <div class="scope__grid">
+      <article class="tile rv" style="--i:0"><img src="img/design.webp" width="760" height="428" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M5 5H39V39H5Z"/><path d="M5 22H20V39"/><path d="M20 14H39"/></svg></span><div class="tile__tx"><h3>Дизайн-проєкт</h3><p>Планування, розкладки, підбір матеріалів. Усе одразу потрапляє в кошторис.</p></div></article>
+      <article class="tile rv" style="--i:1"><img src="img/demolition.webp" width="760" height="507" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 8L36 36"/><path d="M36 8L8 36"/></svg></span><div class="tile__tx"><h3>Демонтаж</h3><p>Старе покриття, перегородки, вивезення сміття.</p></div></article>
+      <article class="tile rv" style="--i:2"><img src="img/electrical.webp" width="760" height="507" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M24 4L9 25H21L19 40L35 18H23Z"/></svg></span><div class="tile__tx"><h3>Електрика</h3><p>Нова проводка, щиток, розетки за схемою.</p></div></article>
+      <article class="tile rv" style="--i:3"><img src="img/plumbing.webp" width="760" height="570" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 5C30 15 34 21 34 27A12 12 0 0 1 10 27C10 21 14 15 22 5Z"/></svg></span><div class="tile__tx"><h3>Сантехніка</h3><p>Труби, підключення приладів, перевірка тиском.</p></div></article>
+      <article class="tile rv" style="--i:0"><img src="img/rough.webp" width="760" height="501" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M4 7H40V37H4Z"/><path d="M4 17H40M4 27H40"/><path d="M18 7V17M30 17V27M14 27V37"/></svg></span><div class="tile__tx"><h3>Чорнові роботи</h3><p>Стяжка, штукатурка, вирівнювання стін.</p></div></article>
+      <article class="tile rv" style="--i:1"><img src="img/finishing.webp" width="760" height="1140" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M6 5H32V15H6Z"/><path d="M32 10H38V22H20V28"/><path d="M17 28H23V40H17Z"/></svg></span><div class="tile__tx"><h3>Чистові роботи</h3><p>Підлога, плитка, фарбування, стелі.</p></div></article>
+      <article class="tile rv" style="--i:2"><img src="img/windows.webp" width="760" height="507" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M9 4H35V40H9Z"/><path d="M22 4V40M9 22H35"/></svg></span><div class="tile__tx"><h3>Двері та вікна</h3><p>Монтаж, регулювання, перевірка відкривання.</p></div></article>
+      <article class="tile rv" style="--i:3"><img src="img/cleaning.webp" width="760" height="428" loading="lazy" alt=""><span class="tile__ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M20 5L24 17L36 21L24 25L20 37L16 25L4 21L16 17Z"/></svg></span><div class="tile__tx"><h3>Прибирання</h3><p>Здаємо квартиру чистою, без будівельного пилу.</p></div></article>
     </div>
   </div>
 </section>
@@ -297,56 +305,73 @@
     <div class="obj__grid">
 
       <article class="obj obj--big rv" data-obs>
-        <div class="obj__h"><span>Об'єкт № 01</span><span>65 м² · 49 днів</span></div>
-        <h3>Квартира в новобудові</h3>
-        <span class="obj__stamp">ЗДАНО</span>
-        <svg class="pl" viewBox="0 0 284 214" role="img" aria-label="Схема планування квартири 65 м²">
-          <rect class="fl" x="2" y="2" width="170" height="145"/>
-          <path class="w" pathLength="1" d="M2 2H282V212H2Z"/>
-          <path class="w w2" pathLength="1" d="M172 2V212M172 125H282M2 147H172M92 147V212"/>
-          <text x="14" y="84">вітальня-кухня</text><text x="188" y="70">спальня</text><text x="188" y="172">дитяча</text>
-        </svg>
-        <div class="gantt" role="img" aria-label="Хід робіт: демонтаж 1 тиждень, чорнові 2–3, електрика й сантехніка 3–4, чистові 5–7">
-          <div class="g-ax"><span></span><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b></div>
-          <div class="g-row"><span>Демонтаж</span><div><i style="--s:0;--e:1"></i></div></div>
-          <div class="g-row"><span>Чорнові</span><div><i style="--s:1;--e:3"></i></div></div>
-          <div class="g-row"><span>Електрика, сантехніка</span><div><i style="--s:2;--e:4"></i></div></div>
-          <div class="g-row"><span>Чистові</span><div><i style="--s:4;--e:7"></i></div></div>
+        <div class="obj__ph wipe">
+          <img src="img/obj1.webp" width="1100" height="619" loading="lazy" alt="Вітальня після ремонту (стокове фото для демо)">
+          <div class="obj__plan"><svg class="pl" viewBox="0 0 284 214" role="img" aria-label="Схема планування квартири 65 м²">
+            <rect class="fl" x="2" y="2" width="170" height="145"/>
+            <path class="w" pathLength="1" d="M2 2H282V212H2Z"/>
+            <path class="w w2" pathLength="1" d="M172 2V212M172 125H282M2 147H172M92 147V212"/>
+          </svg></div>
+          <span class="obj__stamp">ЗДАНО</span>
         </div>
-        <dl class="mt"><div><dt>Кошторис</dt><dd>812 000 ₴</dd></div><div><dt>По акту</dt><dd>812 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        <div class="obj__b">
+          <div class="obj__h"><span>Об'єкт № 01</span><span>65 м² · 49 днів</span></div>
+          <h3>Квартира в новобудові</h3>
+          <div class="gantt" role="img" aria-label="Хід робіт: демонтаж 1 тиждень, чорнові 2–3, електрика й сантехніка 3–4, чистові 5–7">
+            <div class="g-ax"><span></span><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b></div>
+            <div class="g-row"><span>Демонтаж</span><div><i style="--s:0;--e:1"></i></div></div>
+            <div class="g-row"><span>Чорнові</span><div><i style="--s:1;--e:3"></i></div></div>
+            <div class="g-row"><span>Електрика, сантехніка</span><div><i style="--s:2;--e:4"></i></div></div>
+            <div class="g-row"><span>Чистові</span><div><i style="--s:4;--e:7"></i></div></div>
+          </div>
+          <dl class="mt"><div><dt>Кошторис</dt><dd>812 000 ₴</dd></div><div><dt>По акту</dt><dd>812 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        </div>
       </article>
 
       <article class="obj rv" style="--i:1" data-obs>
-        <div class="obj__h"><span>Об'єкт № 02</span><span>82 м² · 56 днів</span></div>
-        <h3>Квартира, вторинний ринок</h3>
-        <span class="obj__stamp">ЗДАНО</span>
-        <svg class="pl" viewBox="0 0 300 140" role="img" aria-label="Схема планування квартири 82 м²">
-          <path class="w" pathLength="1" d="M2 2H298V138H2Z"/>
-          <path class="w w2" pathLength="1" d="M130 2V138M130 70H298M214 70V138M2 100H80"/>
-        </svg>
-        <dl class="mt"><div><dt>Кошторис</dt><dd>1 084 000 ₴</dd></div><div><dt>По акту</dt><dd>1 084 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        <div class="obj__ph wipe">
+          <img src="img/obj2.webp" width="1100" height="733" loading="lazy" alt="Простора вітальня після ремонту (стокове фото для демо)">
+          <div class="obj__plan"><svg class="pl" viewBox="0 0 300 140" role="img" aria-label="Схема планування квартири 82 м²">
+            <path class="w" pathLength="1" d="M2 2H298V138H2Z"/>
+            <path class="w w2" pathLength="1" d="M130 2V138M130 70H298M214 70V138M2 100H80"/>
+          </svg></div>
+          <span class="obj__stamp">ЗДАНО</span>
+        </div>
+        <div class="obj__b">
+          <div class="obj__h"><span>Об'єкт № 02</span><span>82 м² · 56 днів</span></div>
+          <h3>Квартира, вторинний ринок</h3>
+          <dl class="mt"><div><dt>Кошторис</dt><dd>1 084 000 ₴</dd></div><div><dt>По акту</dt><dd>1 084 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        </div>
       </article>
 
       <article class="obj rv" style="--i:2" data-obs>
-        <div class="obj__h"><span>Об'єкт № 03</span><span>120 м² · 98 днів</span></div>
-        <h3>Приватний будинок</h3>
-        <span class="obj__stamp">ЗДАНО</span>
-        <svg class="pl" viewBox="0 0 300 150" role="img" aria-label="Схема планування будинку 120 м²">
-          <path class="w" pathLength="1" d="M2 2H190V60H298V148H2Z"/>
-          <path class="w w2" pathLength="1" d="M100 2V148M190 60V148M2 80H100M190 104H298"/>
-        </svg>
-        <dl class="mt"><div><dt>Кошторис</dt><dd>2 160 000 ₴</dd></div><div><dt>По акту</dt><dd>2 160 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        <div class="obj__ph wipe">
+          <img src="img/obj3.webp" width="1100" height="1100" loading="lazy" alt="Приватний будинок після ремонту фасаду (стокове фото для демо)" style="object-position:50% 60%">
+          <div class="obj__plan"><svg class="pl" viewBox="0 0 300 150" role="img" aria-label="Схема планування будинку 120 м²">
+            <path class="w" pathLength="1" d="M2 2H190V60H298V148H2Z"/>
+            <path class="w w2" pathLength="1" d="M100 2V148M190 60V148M2 80H100M190 104H298"/>
+          </svg></div>
+          <span class="obj__stamp">ЗДАНО</span>
+        </div>
+        <div class="obj__b">
+          <div class="obj__h"><span>Об'єкт № 03</span><span>120 м² · 98 днів</span></div>
+          <h3>Приватний будинок</h3>
+          <dl class="mt"><div><dt>Кошторис</dt><dd>2 160 000 ₴</dd></div><div><dt>По акту</dt><dd>2 160 000 ₴</dd></div><div><dt>Різниця</dt><dd class="zero">0 ₴</dd></div></dl>
+        </div>
       </article>
 
     </div>
-    <p class="rev__note rv">Приклади вигадані для демо. На справжньому сайті тут були б фото й акти реальних об'єктів.</p>
+    <p class="note rv">Приклади й фото вигадані для демо: стокові знімки не мають стосунку до компанії. На справжньому сайті тут були б фото й акти реальних об'єктів.</p>
   </div>
 </section>
 
 <!-- ПРОЦЕС -->
 <section class="process" id="process">
-  <div class="wrap">
-    <div class="head rv"><h2>Від заявки до ключів: чотири кроки</h2></div>
+  <div class="wrap proc">
+    <div class="proc__l">
+      <div class="head rv" style="margin-bottom:0"><h2>Від заявки до ключів: чотири кроки</h2></div>
+      <div class="ph wipe"><img src="img/process.webp" width="900" height="600" loading="lazy" alt="Рахунок кошторису на калькуляторі (стокове фото для демо)"></div>
+    </div>
     <ol class="steps" data-obs>
       <li class="step rv" style="--i:0"><span class="d">День 1</span><h3>Виїзд і замір</h3><p>Заміряємо об'єкт і за добу надсилаємо кошторис.</p></li>
       <li class="step rv" style="--i:1"><span class="d">День 2</span><h3>Договір із фіксованою сумою</h3><p>Підписуємо суму й терміни до першого платежу.</p></li>
@@ -369,7 +394,7 @@
       <figure class="rv" style="--i:1"><blockquote>«Жила за 400 км від об'єкта весь час ремонту. Фотозвіт щотижня, і я точно знала, що відбувається, без жодного дзвінка з проблемами».</blockquote><figcaption class="who"><i>ІР</i><div>Ірина<span>Приватний будинок, 120 м²</span></div></figcaption></figure>
       <figure class="rv" style="--i:2"><blockquote>«Порівнювала три компанії. Тільки БудДім показав кошторис до підпису договору, а не після першого платежу».</blockquote><figcaption class="who"><i>НК</i><div>Наталія<span>Новобудова, 54 м²</span></div></figcaption></figure>
     </div>
-    <p class="rev__note">Відгуки вигадані для демо.</p>
+    <p class="note">Відгуки вигадані для демо.</p>
   </div>
 </section>
 
@@ -378,9 +403,9 @@
   <div class="wrap">
     <div class="head rv"><h2>Ви спілкуєтесь напряму з тими, хто веде об'єкт</h2><p>Без колцентру: власник, прораб і бригадир відповідають за свою частину.</p></div>
     <div class="team__grid">
-      <div class="pers rv"><i>ОІ</i><div><h3>Олександр Іваненко</h3><div class="role">Власник, 12 років у ремонті</div><p>Особисто узгоджує кошторис і підписує договір із кожним клієнтом.</p></div></div>
-      <div class="pers rv" style="--i:1"><i>ДК</i><div><h3>Дмитро Ковальчук</h3><div class="role">Прораб, контроль якості</div><p>Щотижня приймає роботу бригад і готує фотозвіт для клієнта.</p></div></div>
-      <div class="pers rv" style="--i:2"><i>ДП</i><div><h3>Денис Петренко</h3><div class="role">Бригадир</div><p>Керує бригадою безпосередньо на об'єкті, 8 років у компанії.</p></div></div>
+      <article class="pers rv"><div class="ph"><img src="img/team1.webp" width="640" height="960" loading="lazy" alt="Олександр Іваненко (стокове фото для демо)"></div><h3>Олександр Іваненко</h3><div class="role">Власник, 12 років у ремонті</div><p>Особисто узгоджує кошторис і підписує договір із кожним клієнтом.</p></article>
+      <article class="pers rv" style="--i:1"><div class="ph"><img src="img/team2.webp" width="640" height="960" loading="lazy" alt="Дмитро Ковальчук (стокове фото для демо)"></div><h3>Дмитро Ковальчук</h3><div class="role">Прораб, контроль якості</div><p>Щотижня приймає роботу бригад і готує фотозвіт для клієнта.</p></article>
+      <article class="pers rv" style="--i:2"><div class="ph"><img src="img/team3.webp" width="640" height="931" loading="lazy" alt="Денис Петренко (стокове фото для демо)"></div><h3>Денис Петренко</h3><div class="role">Бригадир</div><p>Керує бригадою безпосередньо на об'єкті, 8 років у компанії.</p></article>
     </div>
   </div>
 </section>
@@ -459,7 +484,7 @@
       <div>БудДім: ремонт квартир і будинків під ключ.<br>Київ та область.</div>
       <div class="mono">+380 44 123 45 67<br>щодня, 9:00–20:00</div>
     </div>
-    <p class="foot__b">Демо-проєкт про вигаданий бізнес: назва, імена, цифри, відгуки й контакти ілюстративні. Сайт зробив Влад Пригонов, <a href="https://pryhonov.com/">pryhonov.com</a>.</p>
+    <p class="foot__b">Демо-проєкт про вигаданий бізнес: назва, імена, цифри, відгуки й контакти ілюстративні. Фотографії з <a href="https://unsplash.com/">Unsplash</a>, вони не мають стосунку до компанії. Сайт зробив Влад Пригонов, <a href="https://pryhonov.com/">pryhonov.com</a>.</p>
   </div>
 </footer>
 
@@ -468,6 +493,6 @@
   <a class="btn" href="#final-form">Отримати кошторис</a>
 </div>
 
-<script src="js/main.js?v=1" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>
