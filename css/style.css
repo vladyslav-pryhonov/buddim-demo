@@ -204,24 +204,31 @@ input[type=range]:focus-visible::-webkit-slider-thumb{outline:3px solid var(--ru
 .sim__out small{display:block;margin-top:4px;font:500 .75rem/1.2 var(--f-mono);letter-spacing:-.03em;color:var(--text-2)}
 .sim__note{margin-top:14px;font-size:.8125rem;color:var(--mute);line-height:1.45}
 
-/* порівняння */
-.cmp{width:100%;border-collapse:collapse}
-.cmp th,.cmp td{padding:20px 22px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.35}
-.cmp thead th{font:500 .75rem/1.2 var(--f-mono);letter-spacing:-.01em;color:var(--mute);padding-top:0;border-bottom:2px solid var(--ink)}
-.cmp thead th.us{color:var(--rust-dark)}
-.cmp tbody th{font-weight:560;width:30%}
-.cmp td{color:var(--mute);width:33%}
-.cmp td.us{color:var(--text);font-weight:600;background:var(--rust-tint)}
-.cmp td.us svg{display:inline-block;vertical-align:-3px;width:18px;height:18px;margin-right:8px;color:var(--rust)}
+/* порівняння: колонка БудДім темна, щоб одразу було видно різницю */
+.cmp{width:100%;border-collapse:separate;border-spacing:0}
+.cmp th,.cmp td{text-align:left;vertical-align:middle;line-height:1.35}
+.cmp thead th{padding:0 26px 16px;font:600 .8125rem/1.2 var(--f-mono);letter-spacing:-.01em;color:var(--mute)}
+.cmp thead th.us{padding:20px 26px;background:var(--ink);color:var(--rust-lt);border-radius:2px 2px 0 0;font-size:.9375rem}
+.cmp tbody th{padding:22px 26px 22px 0;font-weight:600;font-size:1.0625rem;width:32%;border-bottom:1px solid var(--line)}
+.cmp td{padding:22px 26px;font-size:1.0625rem;color:var(--text-2);border-bottom:1px solid var(--line)}
+.cmp td svg{display:inline-block;vertical-align:-4px;flex:none;width:20px;height:20px;margin-right:12px;color:var(--mute);opacity:.8}
+.cmp td.us{background:var(--ink);color:var(--paper);font-weight:600;border-bottom:1px solid rgba(251,250,247,.14)}
+.cmp td.us svg{color:var(--rust-lt);opacity:1}
+.cmp tbody tr:last-child td.us{border-bottom:0;border-radius:0 0 2px 2px;box-shadow:0 30px 50px -30px rgba(23,21,15,.6)}
+.cmp tbody tr:last-child th,.cmp tbody tr:last-child td:not(.us){border-bottom:0}
 @media(max-width:700px){
-  .cmp,.cmp tbody,.cmp tr,.cmp th,.cmp td{display:block;width:100%}
-  .cmp thead{display:none}
-  .cmp tr{border-bottom:1px solid var(--line);padding:16px 0}
-  .cmp tbody th{padding:0 0 8px;border:0;width:100%}
-  .cmp td{padding:6px 0;border:0;width:100%;display:flex;justify-content:space-between;gap:14px;text-align:right}
-  .cmp td::before{content:attr(data-l);flex:none;text-align:left;font:500 .75rem/1.4 var(--f-mono);color:var(--mute);letter-spacing:-.01em;padding-top:2px}
-  .cmp td.us{padding:8px 10px;margin-top:4px}
-  .cmp td.us::before{color:var(--rust-dark)}
+  .cmp,.cmp thead,.cmp tbody{display:block}
+  .cmp thead tr,.cmp tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .cmp thead th:first-child{display:none}
+  .cmp thead th{padding:0 14px 12px;font-size:.75rem}
+  .cmp thead th.us{padding:14px;font-size:.8125rem}
+  .cmp tbody tr{padding-top:20px}
+  .cmp tbody tr:first-child{padding-top:6px}
+  .cmp tbody th{grid-column:1/-1;display:block;width:auto;padding:0 0 9px;border:0;font-size:.9375rem}
+  .cmp td{display:flex;align-items:flex-start;padding:15px 14px;font-size:.9375rem;border:0;background:var(--stone)}
+  .cmp td svg{width:18px;height:18px;margin:2px 8px 0 0}
+  .cmp td.us{border:0;border-radius:0;box-shadow:none}
+  .cmp tbody tr:last-child td.us{box-shadow:none;border-radius:0 0 2px 2px}
 }
 
 /* ціни й калькулятор */
